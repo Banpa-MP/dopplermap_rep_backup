@@ -286,7 +286,7 @@ export default function App() {
         return;
     }
 
-    const url = `${baseUrl}/api/method/dopplermap_app.api.guardar_doppler_frontend`;
+    const url = `${baseUrl}/api/method/dopplermap.api.guardar_doppler_frontend`;
     const payload = {
         encounter_id: window.current_encounter_id || "ID_NO_ENCONTRADO",
         sistema: activeSystem,
@@ -378,7 +378,7 @@ export default function App() {
       ${JSON.stringify(contextData)}`;
 
       const baseUrl = import.meta.env.VITE_FRAPPE_URL;
-      const url = `${baseUrl}/api/method/dopplermap_app.api.generar_reporte_gemini`;
+      const url = `${baseUrl}/api/method/dopplermap.api.generar_reporte_gemini`;
 
       const apiKey = import.meta.env.VITE_FRAPPE_API_KEY;
       const apiSecret = import.meta.env.VITE_FRAPPE_API_SECRET;
